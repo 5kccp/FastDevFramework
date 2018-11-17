@@ -1,0 +1,6 @@
+module Pods_FastDev_FastDevFramework {
+  umbrella header "Pods-FastDev-FastDevFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

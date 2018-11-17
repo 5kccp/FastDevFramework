@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - KissXML (5.2.3)
+  - Yoga (1.9.0)
+  - YogaKit (1.9.0):
+    - Yoga (~> 1.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KissXML
+  - YogaKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - KissXML
+    - Yoga
+    - YogaKit
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  KissXML: 09f88ff8161fd058d67b70740b8b516687b52823
+  Yoga: aaae8abea68951f60bee05f6277d3eed90bb91bb
+  YogaKit: d447a9bb808718e6f58e52a2255a8050081a3ead
+
+PODFILE CHECKSUM: e64a711a11a404f30c84a1893515e26c407a71fd
+
+COCOAPODS: 1.5.3
