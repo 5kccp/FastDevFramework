@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		3400D229219FCA250060BBA9 /* FastDevFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D227219FCA250060BBA9 /* FastDevFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3400D25B219FCE710060BBA9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400D25A219FCE710060BBA9 /* libc++.tbd */; };
-		3400D261219FCF5F0060BBA9 /* FDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D25F219FCF5F0060BBA9 /* FDView.h */; };
+		3400D261219FCF5F0060BBA9 /* FDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D25F219FCF5F0060BBA9 /* FDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3400D262219FCF5F0060BBA9 /* FDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400D260219FCF5F0060BBA9 /* FDView.m */; };
-		3400D265219FCF790060BBA9 /* FDDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D263219FCF790060BBA9 /* FDDocument.h */; };
+		3400D265219FCF790060BBA9 /* FDDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D263219FCF790060BBA9 /* FDDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3400D266219FCF790060BBA9 /* FDDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400D264219FCF790060BBA9 /* FDDocument.m */; };
 		3400D268219FD20E0060BBA9 /* handlebars.js in Resources */ = {isa = PBXBuildFile; fileRef = 3400D267219FD20E0060BBA9 /* handlebars.js */; };
-		3400D26B219FD28F0060BBA9 /* FDEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D269219FD28F0060BBA9 /* FDEngine.h */; };
+		3400D26B219FD28F0060BBA9 /* FDEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3400D269219FD28F0060BBA9 /* FDEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3400D26C219FD28F0060BBA9 /* FDEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400D26A219FD28F0060BBA9 /* FDEngine.m */; };
+		34679C9A21A19FC600D5B621 /* FDComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 34679C9821A19FC600D5B621 /* FDComponent.h */; };
+		34679C9B21A19FC600D5B621 /* FDComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34679C9921A19FC600D5B621 /* FDComponent.m */; };
 		69E65F8E2D804B269613B57B /* libPods-FastDev-FastDevFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119F7DFA430039CE4DDD70C /* libPods-FastDev-FastDevFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		3400D267219FD20E0060BBA9 /* handlebars.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = handlebars.js; sourceTree = "<group>"; };
 		3400D269219FD28F0060BBA9 /* FDEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDEngine.h; sourceTree = "<group>"; };
 		3400D26A219FD28F0060BBA9 /* FDEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDEngine.m; sourceTree = "<group>"; };
+		34679C9821A19FC600D5B621 /* FDComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDComponent.h; sourceTree = "<group>"; };
+		34679C9921A19FC600D5B621 /* FDComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDComponent.m; sourceTree = "<group>"; };
 		A5B9F0B8BDABFB8109B58999 /* Pods-FastDevFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastDevFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastDevFramework/Pods-FastDevFramework.release.xcconfig"; sourceTree = "<group>"; };
 		ACFE255A6822CFE3B779C5A1 /* Pods-FastDev-FastDevFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastDev-FastDevFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastDev-FastDevFramework/Pods-FastDev-FastDevFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,8 @@
 				3400D264219FCF790060BBA9 /* FDDocument.m */,
 				3400D269219FD28F0060BBA9 /* FDEngine.h */,
 				3400D26A219FD28F0060BBA9 /* FDEngine.m */,
+				34679C9821A19FC600D5B621 /* FDComponent.h */,
+				34679C9921A19FC600D5B621 /* FDComponent.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -122,8 +128,9 @@
 			files = (
 				3400D26B219FD28F0060BBA9 /* FDEngine.h in Headers */,
 				3400D229219FCA250060BBA9 /* FastDevFramework.h in Headers */,
-				3400D261219FCF5F0060BBA9 /* FDView.h in Headers */,
+				34679C9A21A19FC600D5B621 /* FDComponent.h in Headers */,
 				3400D265219FCF790060BBA9 /* FDDocument.h in Headers */,
+				3400D261219FCF5F0060BBA9 /* FDView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3400D266219FCF790060BBA9 /* FDDocument.m in Sources */,
+				34679C9B21A19FC600D5B621 /* FDComponent.m in Sources */,
 				3400D26C219FD28F0060BBA9 /* FDEngine.m in Sources */,
 				3400D262219FCF5F0060BBA9 /* FDView.m in Sources */,
 			);

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDDocument : NSObject
+- (instancetype)initWithString:(NSString*)aString;
 @end
 
 NS_ASSUME_NONNULL_END

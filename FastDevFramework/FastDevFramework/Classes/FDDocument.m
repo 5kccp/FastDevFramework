@@ -7,7 +7,18 @@
 //
 
 #import "FDDocument.h"
+#import <KissXML/KissXML.h>
+#import "FDComponent.h"
 
+@interface FDDocument ()
+@property (nonatomic, strong) DDXMLDocument *xmlDocument;
+@end
 @implementation FDDocument
-
+- (instancetype)initWithString:(NSString*)aString{
+    self = [super init];
+    if (self) {
+        _xmlDocument = [[DDXMLDocument alloc] initWithXMLString:aString options:0 error:nil];
+    }
+    return nil;
+}
 @end

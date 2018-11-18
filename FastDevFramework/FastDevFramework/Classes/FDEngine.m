@@ -8,6 +8,8 @@
 
 #import "FDEngine.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "FDDocument.h"
+
 @interface FDEngine ()
 @property (nonatomic, strong) JSContext *jsCtx;
 @end
@@ -25,13 +27,20 @@
     self = [super init];
     if (self) {
         _jsCtx = [[JSContext alloc] init];
-        NSURL *scriptUrl = [[NSBundle mainBundle] URLForResource:@"handlebars" withExtension:@"js"]
+        
+        NSURL *scriptUrl = [[NSBundle bundleForClass:[self class]] URLForResource:@"handlebars" withExtension:@"js"];
         NSString *script = [NSString stringWithContentsOfURL:scriptUrl encoding:NSUTF8StringEncoding error:nil];
         [_jsCtx evaluateScript:script];
+        [_jsCtx evaluateScript:@"function getFdDocument(tpl, data) {var template = Handlebars.compile(tpl); var result = template(data);return result;}"];
     }
     return self;
 }
-- (FDDocument*)documentWith:(id)data template:(id)tpl{
-    return nil;
+- (FDDocument*)documentWithData:(NSDictionary*)data template:(NSString*)tpl{
+    
+    JSValue *template = _jsCtx[@"getFdDocument"];
+    JSValue *value = [template callWithArguments:@[[tpl copy], [data copy]]];
+    NSString *aString = [value toString];
+    FDDocument *fdDocument = [[FDDocument alloc] initWithString:aString];
+    return fdDocument;
 }
 @end

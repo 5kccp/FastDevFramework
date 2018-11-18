@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FastDevFramework/FDEngine.h>
+#import <FastDevFramework/FDView.h>
+#import <FastDevFramework/FDDocument.h>
 
 //! Project version number for FastDevFramework.
 FOUNDATION_EXPORT double FastDevFrameworkVersionNumber;

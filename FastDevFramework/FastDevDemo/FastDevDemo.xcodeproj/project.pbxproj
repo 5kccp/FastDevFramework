@@ -15,6 +15,8 @@
 		3400D24B219FCC0C0060BBA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400D24A219FCC0C0060BBA9 /* main.m */; };
 		3400D259219FCC520060BBA9 /* FastDevFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400D258219FCC520060BBA9 /* FastDevFramework.framework */; };
 		3400D25D219FCE840060BBA9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400D25C219FCE840060BBA9 /* libc++.tbd */; };
+		34679C9521A199A100D5B621 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 34679C9421A199A100D5B621 /* test.xml */; };
+		34679C9721A199D700D5B621 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34679C9621A199D700D5B621 /* data.json */; };
 		B17B1C904934B0803A0A44A9 /* libPods-FastDev-FastDevDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5EEE768AAFD9F6EB61542E /* libPods-FastDev-FastDevDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		3400D24A219FCC0C0060BBA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3400D258219FCC520060BBA9 /* FastDevFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastDevFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3400D25C219FCE840060BBA9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		34679C9421A199A100D5B621 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		34679C9621A199D700D5B621 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		6288000B9419B08A62E772C3 /* Pods-FastDev-FastDevDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastDev-FastDevDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-FastDev-FastDevDemo/Pods-FastDev-FastDevDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8D5EEE768AAFD9F6EB61542E /* libPods-FastDev-FastDevDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastDev-FastDevDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +75,8 @@
 		3400D23A219FCC0B0060BBA9 /* FastDevDemo */ = {
 			isa = PBXGroup;
 			children = (
+				34679C9621A199D700D5B621 /* data.json */,
+				34679C9421A199A100D5B621 /* test.xml */,
 				3400D23B219FCC0B0060BBA9 /* AppDelegate.h */,
 				3400D23C219FCC0B0060BBA9 /* AppDelegate.m */,
 				3400D23E219FCC0B0060BBA9 /* ViewController.h */,
@@ -164,6 +170,8 @@
 				3400D248219FCC0C0060BBA9 /* LaunchScreen.storyboard in Resources */,
 				3400D245219FCC0C0060BBA9 /* Assets.xcassets in Resources */,
 				3400D243219FCC0B0060BBA9 /* Main.storyboard in Resources */,
+				34679C9721A199D700D5B621 /* data.json in Resources */,
+				34679C9521A199A100D5B621 /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDEngine : NSObject
 + (FDEngine*)sharedInstance;
-- (FDDocument*)documentWith:(id)data template:(id)tpl;
+- (FDDocument*)documentWithData:(NSDictionary*)data template:(NSString*)tpl;
 @end
 
 NS_ASSUME_NONNULL_END
